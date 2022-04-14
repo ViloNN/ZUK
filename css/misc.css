@@ -1,0 +1,39 @@
+/* Reusable */
+
+.dreampire-logo {
+  height: 20px;
+}
+
+.square {
+  position: absolute;
+  width: 95px;
+  height: 95px;
+
+  background: #185E9C;
+  border-radius: 15px;
+  transform: rotate(-18.62deg);
+}
+
+.square::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border: 1px solid #185E9C;
+  border-radius: 15px;
+  transform: translate(-10px, -10px);
+}
+
+.paragraph--decorated {
+  color: #185E9C;
+  font-weight: 700;
+}
+
+.square--left {
+  bottom: 0;
+}
+
+.square--right {
+  right: 0;
+  transform: rotate(125.01deg);
+}

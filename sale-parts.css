@@ -1,0 +1,180 @@
+.sale {
+  /*width: 100%;
+  position: relative;
+  padding-top: 2em;
+  padding-bottom: 4em;
+  display: grid;
+  align-items: center;
+  justify-items: center;*/
+  width: 100%;
+  position: relative;
+  padding-top: 2em;
+  padding-bottom: 4em;
+  margin: 0 auto;
+  max-width: 1200px;
+  }
+
+  .color_home {
+    color: #333333;
+    font-weight: 400;
+  }
+  
+  .color_rent {
+    color: #333333;
+  }
+  
+  .color_sale {
+    color: #185E9C;
+  }
+  
+  .sale__nav a {
+    color: #185E9C;
+  }
+  
+  .sale__head {
+    margin-top: 4em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  
+    font-family: 'Lato', sans-serif;
+  }
+  
+  .sale__head h2 {
+    font-weight: 500;
+    font-size: 14px;
+    letter-spacing: 0.2em;
+    color: #185E9C;
+    text-transform: uppercase;
+  }
+  
+  .sale__head p {
+    margin-top: 0.5em;
+    font-weight: 800;
+    font-size: 36px;
+    text-align: center;
+    color: #0C0C0C;
+  }
+  
+  .sale__list {
+    margin-top: 4em;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    row-gap: 2em;
+    column-gap: 1em;
+  }
+
+  .sale__nav {
+    font-family: 'Lato';
+    font-style: Mixed;
+    font-size: 16px;
+    line-height: 24px;
+    line-height: 125%;
+  }
+  
+  @media screen and (max-width: 425px) {
+    .sale__nav {
+      width: 95%;
+    }
+  }
+  
+  @media screen and (min-width: 768px) {
+    .sale__nav {
+      width: 97.5%;
+    }
+  }
+  
+  @media screen and (min-width: 1024px) {
+    .sale__nav {
+      width: 97.5%;
+    }
+  }
+  
+  @media screen and (min-width: 1440px) {
+    .sale__nav {
+      width: 84%;
+    }
+  }
+  
+  @media screen and (min-width: 2560px) {
+    .sale__nav {
+      width: 48%;
+    }
+  }
+
+  .sale__more {
+    margin-top: 5em;
+    background: #185E9C;
+    border-radius: 4px;
+    outline: none;
+    border: none;
+    padding: 8px 16px;
+    color: white;
+  
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  
+    font-family: 'Lato', sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    color: #FFFFFF;
+  }
+  
+  
+  .truck {
+    height: 102%;
+    background: #FFFFFF;
+    box-shadow: 8px 10px 24px rgba(0, 0, 0, 0.1);
+    border-radius: 16px;
+  }
+  
+  .truck__image {
+    width: 100%;
+    border-radius: 16px 16px 0 0;
+  }
+  
+  .truck__info {
+    margin: 1em;
+    font-family: 'Lato', sans-serif;
+  }
+  
+  .truck__head h3 {
+    font-weight: 700;
+    font-size: 20px;
+  }
+  
+  .truck__head p {
+    color: gray;
+    margin-top: 0.3em;
+    font-weight: 300;
+    font-size: 18px;
+  }
+  
+  .truck__data {
+    margin-top: 1em;
+    width: 100%;
+  }
+  
+  .truck__data tr td:nth-child(1) {
+    font-weight: 400;
+    font-size: 16px;
+    color: #0C0C0C;
+    text-align: left;
+    line-height: 32px;
+  }
+  
+  .truck__data tr td:nth-child(2) {
+    line-height: 32px;
+    font-weight: 600;
+    font-size: 16px;
+    text-align: right;
+    color: #0C0C0C;
+  }
+  
+  @media screen and (max-width: 1024px) {
+    .sale__list {
+      grid-template-columns: 1fr;
+    }
+  }

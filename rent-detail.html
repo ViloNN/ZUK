@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ZUK - Stasi Las</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter&family=Lato:wght@400;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="./css/reset.css"/>
+  <link rel="stylesheet" href="./css/misc.css"/>
+  <link rel="stylesheet" href="./css/navbar.css"/>
+  <link rel="stylesheet" href="./css/footer.css"/>
+
+  <link rel="stylesheet" href="./rent-detail.css"/>
+
+</head>
+<body>
+  <nav class="navigation">
+    <img class="navigation__logo" src="./img/logo.png"/>
+    <ul class="navigation__links">
+      <li>
+        <a class="navigation__link navigation__link--active" href="./index.html#">Strona główna</a>
+      </li>
+      <li>
+        <a class="navigation__link" href="./rent.html">Wynajem</a>
+      </li>
+      <li>
+        <span class="navigation__link navigation__drop">
+          <a>Sprzedaż</a>
+          <svg class="navigation__chevron" width="12" height="8" viewBox="0 0 12 8" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <path d="M1 1.5L6 6.5L11 1.5" stroke="#333333" stroke-width="1.67" stroke-linecap="round"
+              stroke-linejoin="round" />
+          </svg>
+          <div class="navigation__sub">
+            <div class="navigation__sale">
+              <div>
+                <a href="./sale.html">
+                  <div class="navigation__sale-line">
+                    <img src="./img/truck_drawing--small.png" />
+                    <div class="navigation__text">
+                      <h3>Pojazdów komunalnych</h3>
+                        <p>Znajdziesz tu wiele pojazdów komunalnych dostępnych w naszej ofercie.</p>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="navigation__sale-line">
+                <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M11.0833 13.8333C12.6021 13.8333 13.8333 12.6021 13.8333 11.0833C13.8333 9.56455 12.6021 8.33333 11.0833 8.33333C9.56455 8.33333 8.33333 9.56455 8.33333 11.0833C8.33333 12.6021 9.56455 13.8333 11.0833 13.8333Z"
+                    stroke="#101828" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                  <path
+                    d="M17.8667 13.8333C17.7446 14.1098 17.7082 14.4165 17.7622 14.7139C17.8161 15.0112 17.9578 15.2856 18.1692 15.5017L18.2242 15.5567C18.3946 15.7269 18.5298 15.9291 18.6221 16.1517C18.7144 16.3743 18.7619 16.6128 18.7619 16.8537C18.7619 17.0947 18.7144 17.3332 18.6221 17.5558C18.5298 17.7784 18.3946 17.9806 18.2242 18.1508C18.0539 18.3213 17.8517 18.4565 17.6291 18.5488C17.4066 18.641 17.168 18.6885 16.9271 18.6885C16.6862 18.6885 16.4476 18.641 16.225 18.5488C16.0025 18.4565 15.8003 18.3213 15.63 18.1508L15.575 18.0958C15.359 17.8845 15.0846 17.7427 14.7872 17.6888C14.4898 17.6349 14.1831 17.6713 13.9067 17.7933C13.6355 17.9095 13.4043 18.1025 13.2414 18.3484C13.0786 18.5943 12.9912 18.8825 12.99 19.1775V19.3333C12.99 19.8196 12.7968 20.2859 12.453 20.6297C12.1092 20.9735 11.6429 21.1667 11.1567 21.1667C10.6704 21.1667 10.2041 20.9735 9.8603 20.6297C9.51649 20.2859 9.32333 19.8196 9.32333 19.3333V19.2508C9.31624 18.9474 9.21802 18.6532 9.04147 18.4063C8.86491 18.1595 8.61817 17.9714 8.33333 17.8667C8.05685 17.7446 7.75016 17.7082 7.45279 17.7622C7.15543 17.8161 6.88104 17.9578 6.665 18.1692L6.61 18.2242C6.43973 18.3946 6.23754 18.5298 6.01497 18.6221C5.79241 18.7144 5.55384 18.7619 5.31292 18.7619C5.07199 18.7619 4.83342 18.7144 4.61086 18.6221C4.3883 18.5298 4.1861 18.3946 4.01583 18.2242C3.84538 18.0539 3.71015 17.8517 3.61789 17.6291C3.52563 17.4066 3.47814 17.168 3.47814 16.9271C3.47814 16.6862 3.52563 16.4476 3.61789 16.225C3.71015 16.0025 3.84538 15.8003 4.01583 15.63L4.07083 15.575C4.28216 15.359 4.42392 15.0846 4.47784 14.7872C4.53175 14.4898 4.49536 14.1831 4.37333 13.9067C4.25713 13.6355 4.06419 13.4043 3.81826 13.2414C3.57233 13.0786 3.28414 12.9912 2.98917 12.99H2.83333C2.3471 12.99 1.88079 12.7968 1.53697 12.453C1.19315 12.1092 1 11.6429 1 11.1567C1 10.6704 1.19315 10.2041 1.53697 9.8603C1.88079 9.51649 2.3471 9.32333 2.83333 9.32333H2.91583C3.21924 9.31624 3.5135 9.21802 3.76036 9.04147C4.00721 8.86491 4.19524 8.61817 4.3 8.33333C4.42202 8.05685 4.45842 7.75016 4.4045 7.45279C4.35059 7.15543 4.20883 6.88104 3.9975 6.665L3.9425 6.61C3.77204 6.43973 3.63682 6.23754 3.54456 6.01497C3.4523 5.79241 3.40481 5.55384 3.40481 5.31292C3.40481 5.07199 3.4523 4.83342 3.54456 4.61086C3.63682 4.3883 3.77204 4.1861 3.9425 4.01583C4.11277 3.84538 4.31496 3.71015 4.53753 3.61789C4.76009 3.52563 4.99865 3.47814 5.23958 3.47814C5.48051 3.47814 5.71908 3.52563 5.94164 3.61789C6.1642 3.71015 6.3664 3.84538 6.53667 4.01583L6.59167 4.07083C6.80771 4.28216 7.0821 4.42392 7.37946 4.47784C7.67682 4.53175 7.98352 4.49536 8.26 4.37333H8.33333C8.60445 4.25713 8.83568 4.06419 8.99855 3.81826C9.16142 3.57233 9.24882 3.28414 9.25 2.98917V2.83333C9.25 2.3471 9.44315 1.88079 9.78697 1.53697C10.1308 1.19315 10.5971 1 11.0833 1C11.5696 1 12.0359 1.19315 12.3797 1.53697C12.7235 1.88079 12.9167 2.3471 12.9167 2.83333V2.91583C12.9178 3.2108 13.0052 3.49899 13.1681 3.74493C13.331 3.99086 13.5622 4.1838 13.8333 4.3C14.1098 4.42202 14.4165 4.45842 14.7139 4.4045C15.0112 4.35059 15.2856 4.20883 15.5017 3.9975L15.5567 3.9425C15.7269 3.77204 15.9291 3.63682 16.1517 3.54456C16.3743 3.4523 16.6128 3.40481 16.8537 3.40481C17.0947 3.40481 17.3332 3.4523 17.5558 3.54456C17.7784 3.63682 17.9806 3.77204 18.1508 3.9425C18.3213 4.11277 18.4565 4.31496 18.5488 4.53753C18.641 4.76009 18.6885 4.99865 18.6885 5.23958C18.6885 5.48051 18.641 5.71908 18.5488 5.94164C18.4565 6.1642 18.3213 6.3664 18.1508 6.53667L18.0958 6.59167C17.8845 6.80771 17.7427 7.0821 17.6888 7.37946C17.6349 7.67682 17.6713 7.98352 17.7933 8.26V8.33333C17.9095 8.60445 18.1025 8.83568 18.3484 8.99855C18.5943 9.16142 18.8825 9.24882 19.1775 9.25H19.3333C19.8196 9.25 20.2859 9.44315 20.6297 9.78697C20.9735 10.1308 21.1667 10.5971 21.1667 11.0833C21.1667 11.5696 20.9735 12.0359 20.6297 12.3797C20.2859 12.7235 19.8196 12.9167 19.3333 12.9167H19.2508C18.9559 12.9178 18.6677 13.0052 18.4217 13.1681C18.1758 13.331 17.9829 13.5622 17.8667 13.8333Z"
+                    stroke="#101828" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+                <div class="navigation__text">
+                  <a href="./sale-parts.html">
+                  <h3>Części i zabudowy</h3>
+                  <p>Wszelkiego rodzaju części, które możesz wykorzystać ponownie oraz zabudowy do pojazdów komunalnych.
+                  </p>
+                </a>
+                </div>
+              </div>
+            </div>
+            <div class="navigation__news">
+              <a href="./sale-detail.html">
+              <div class="navigation__frame">
+                <span>Nowość</span>
+                <img src="./img/new_truck.png" />
+              </div>
+              <h3>New Way Mammoth Front Loader</h3>
+              <p>Najnowszy pojazd w naszej ofercie dostępny już w sprzedaży!</p>
+              <a href="./sale.html">Sprawdź</a>
+            </div>
+          </a>
+          </div>
+        </span>
+      </li>
+      <li>
+        <a class="navigation__link" href="#navigation_email">Kontakt</a>
+      </li>
+    </ul>
+    <div class="navigation__phone">
+      <svg width="22" height="23" viewBox="0 0 22 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M20.9994 16.4881V19.4016C21.0005 19.6721 20.9432 19.9398 20.831 20.1876C20.7188 20.4354 20.5542 20.6579 20.3478 20.8407C20.1415 21.0236 19.8978 21.1628 19.6325 21.2494C19.3672 21.3361 19.0861 21.3683 18.8072 21.3439C15.7128 21.0192 12.7404 19.998 10.1289 18.3624C7.69921 16.8714 5.63926 14.8819 4.09534 12.5354C2.39586 10.0019 1.33824 7.11728 1.00816 4.11541C0.983033 3.84685 1.01608 3.57618 1.1052 3.32063C1.19432 3.06508 1.33757 2.83025 1.52581 2.6311C1.71405 2.43194 1.94317 2.27282 2.19858 2.16387C2.45398 2.05492 2.73008 1.99852 3.0093 1.99826H6.02608C6.5141 1.99362 6.98722 2.16052 7.35725 2.46785C7.72727 2.77518 7.96896 3.20197 8.03727 3.66867C8.1646 4.60106 8.40074 5.51654 8.74118 6.39765C8.87648 6.74525 8.90576 7.12303 8.82556 7.48621C8.74536 7.8494 8.55903 8.18276 8.28867 8.44681L7.01156 9.6802C8.44308 12.1116 10.5276 14.1247 13.0451 15.5072L14.3222 14.2738C14.5956 14.0127 14.9408 13.8328 15.3169 13.7553C15.6929 13.6778 16.0841 13.7061 16.444 13.8368C17.3564 14.1656 18.3043 14.3936 19.2698 14.5166C19.7582 14.5832 20.2044 14.8208 20.5233 15.1843C20.8422 15.5478 21.0116 16.0118 20.9994 16.4881Z" stroke="#185E9C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+      <p>603 768 134  |   603 224 633  |  22 782 61 97</p>
+    </div>
+    <div id="burger" class="navigation__burger burger">
+      <span class="burger__segment"></span>
+      <span class="burger__segment"></span>
+      <span class="burger__segment"></span>
+    </div>
+  </nav>
+  <section class="sale-detail">
+    <div class="sale-detail__nav">
+      <a href="./index.html">Strona główna</a>
+      <span>/</span>
+      <a href="./sale.html">Sprzedaż pojazdów komunalnych</a>
+    </div>
+    <div class="sale-detail__main">
+      <div class="gallery-nav">
+        <button class="gallery-nav__btn">
+          <svg width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M10.59 7.40997L6 2.82997L1.41 7.40997L0 5.99997L6 -2.67029e-05L12 5.99997L10.59 7.40997Z" fill="#0C0C0C"/>
+          </svg>            
+        </button>
+        <div class="gallery-nav__frame">
+          <img class="gallery-nav__item" src="./img/sale_truck.png"/>
+        </div>
+        <div class="gallery-nav__frame">
+          <img class="gallery-nav__item" src="./img/sale_truck.png"/>
+        </div>
+        <div class="gallery-nav__frame">
+          <img class="gallery-nav__item" src="./img/sale_truck.png"/>
+        </div>
+        <div class="gallery-nav__frame">
+          <img class="gallery-nav__item" src="./img/sale_truck.png"/>
+        </div>
+        <button class="gallery-nav__btn">
+          <svg width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M6 8L0 2L1.41 0.59L6 5.17L10.59 0.59L12 2L6 8Z" fill="#0C0C0C"/>
+            </svg>                       
+        </button>
+      </div>
+      <div class="gallery">
+        <button class="gallery__left">
+          <svg width="11" height="17" viewBox="0 0 11 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M10.1616 2.6695L4.36912 8.47427L10.1616 14.279L8.37834 16.0622L0.789917 8.47427L8.37834 0.886337L10.1616 2.6695Z" fill="#0C0C0C"/>
+          </svg>                               
+        </button>
+        <img src="./img/sale_truck.png"/>
+        <button class="gallery__right">
+          <svg width="11" height="16" viewBox="0 0 11 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M0.864136 2.49366L6.65664 8.29842L0.864136 14.1032L2.64742 15.8864L10.2359 8.29842L2.64742 0.710495L0.864136 2.49366Z" fill="#0C0C0C"/>
+          </svg>            
+        </button>
+      </div>
+      <div class="sale-detail__brief">
+        <header class="sale-detail__head">
+          <h3>MAN</h3>
+          <p>TGA 26.320</p>
+        </header>
+        <table class="table sale-detail__table">
+          <tr>
+            <td>Zabudowa:</td>
+            <td>Ekocel Medium XL</td>
+          </tr>
+          <tr>
+            <td>Pojemność zabudowy:</td>
+            <td>21</td>
+          </tr>
+          <tr>
+            <td>Typ wrzutu:</td>
+            <td>Zoeller Delta 2301</td>
+          </tr>
+          <tr>
+            <td>Przebieg:</td>
+            <td>120 000 km</td>
+          </tr>
+          <tr>
+            <td>Rok produkcji:</td>
+            <td>2005</td>
+          </tr>
+        </table>
+        <div class="rent-item__when">
+          <svg width="21" height="22" viewBox="0 0 21 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M14.8966 1V5M6.91726 1V5M1.93018 9H19.8837M3.92501 3H17.8888C18.9905 3 19.8837 3.89543 19.8837 5V19C19.8837 20.1046 18.9905 21 17.8888 21H3.92501C2.82329 21 1.93018 20.1046 1.93018 19V5C1.93018 3.89543 2.82329 3 3.92501 3Z" stroke="#185E9C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        <a href="#contact">              
+          <span class="font">Dostępność wynajmu od ręki: </span>
+        </a>
+        </div>
+        <div class="sale-detail__interest">
+          <span>Interesuje Cię właśnie ta oferta?</span>
+          <button>Wynajmij już teraz!</button>
+        </div>
+      </div>
+      <div></div>
+      <div class="sale-detail__truck">
+        <h3>Detale</h3>
+        <p>Pojazdu</p>
+        <table class="sale-detail__table">
+          <tr>
+            <td>Marka:</td>
+            <td>MAN</td>
+          </tr>
+          <tr>
+            <td>Model:</td>
+            <td>TGA 26/320</td>
+          </tr>
+          <tr>
+            <td>Moc silnika:</td>
+            <td>320</td>
+          </tr>
+          <tr>
+            <td>Pojemność silnika:</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Paliwo:</td>
+            <td>Diesel</td>
+          </tr>
+          <tr>
+            <td>Norma emisji spalin:</td>
+            <td>4</td>
+          </tr>
+          <tr>
+            <td>Napęd:</td>
+            <td>6x2</td>
+          </tr>
+          <tr>
+            <td>Ilość osi:</td>
+            <td>3</td>
+          </tr>
+          <tr>
+            <td>Rodzaj osi dodatkowej:</td>
+            <td>Wleczona</td>
+          </tr>
+          <tr>
+            <td>Oś skrętna:</td>
+            <td>Tak</td>
+          </tr>
+          <tr>
+            <td>Skrzynia biegów:</td>
+            <td>Automat</td>
+          </tr>
+          <tr>
+            <td>Zawieszenie (przód/tył):</td>
+            <td>Poduszka/poduszka</td>
+          </tr>
+          <tr>
+            <td>Stan opon:</td>
+            <td>60</td>
+          </tr>
+          <tr>
+            <td>Kamera cofania:</td>
+            <td>Tak</td>
+          </tr>
+          <tr>
+            <td>Klimatyzacja:</td>
+            <td>Tak</td>
+          </tr>
+        </table>
+      </div>
+      <div class="sale-detail__truck" >
+        <h3>Detale</h3>
+        <p>Zabudowy</p>
+        <table class="sale-detail__table">
+          <tr>
+            <td>Rodzaj zabudowy:</td>
+            <td>Ekocel Medium XL</td>
+          </tr>
+          <tr>
+            <td>Pojemność zabudowy:</td>
+            <td>21</td>
+          </tr>
+          <tr>
+            <td>Waga:</td>
+            <td>Brak</td>
+          </tr>
+          <tr>
+            <td>Typ wrzutu:</td>
+            <td>Zoeller Delta 2301</td>
+          </tr>
+          <tr>
+            <td>Obsługiwane pojemniki:</td>
+            <td>60-110 grzebień + łapy</td>
+          </tr>
+          <tr>
+            <td>Ilość komór:</td>
+            <td>1</td>
+          </tr>
+          <tr>
+            <td>Systemy zabezpieczeń:</td>
+            <td>Czujniki w stopniach</td>
+          </tr>
+          <tr>
+            <td>Centralne sterowanie:</td>
+            <td>Tak</td>
+          </tr>
+          <tr>
+            <td>Stopnie dla ładowaczy:</td>
+            <td>Tak</td>
+          </tr>
+        </table>
+      </div>
+      <div></div>
+      <div class="contact">
+        <div class="contact__icon">
+          <svg width="22" height="18" viewBox="0 0 22 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M21 3C21 1.9 20.1 1 19 1H3C1.9 1 1 1.9 1 3M21 3V15C21 16.1 20.1 17 19 17H3C1.9 17 1 16.1 1 15V3M21 3L11 10L1 3" stroke="#185E9C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>              
+        </div>
+        <div>
+          <h3 id="navigation_email">Adres e-mail</h3>
+          <p>zukstasilas@wp.pl</p>
+        </div>
+      </div> 
+      <div class="contact">
+        <div class="contact__icon">
+          <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M20.8881 15.9201V18.9201C20.8892 19.1986 20.8322 19.4743 20.7206 19.7294C20.6091 19.9846 20.4454 20.2137 20.2402 20.402C20.035 20.5902 19.7927 20.7336 19.5289 20.8228C19.265 20.912 18.9855 20.9452 18.7081 20.9201C15.631 20.5857 12.6751 19.5342 10.0781 17.8501C7.66194 16.3148 5.61345 14.2663 4.07812 11.8501C2.38809 9.2413 1.33636 6.27109 1.00812 3.1801C0.983127 2.90356 1.01599 2.62486 1.10462 2.36172C1.19324 2.09859 1.33569 1.85679 1.52288 1.65172C1.71008 1.44665 1.93792 1.28281 2.19191 1.17062C2.44589 1.05843 2.72046 1.00036 2.99812 1.0001H5.99812C6.48342 0.995321 6.95391 1.16718 7.32188 1.48363C7.68985 1.80008 7.93019 2.23954 7.99812 2.7201C8.12474 3.68016 8.35957 4.62282 8.69812 5.5301C8.83266 5.88802 8.86178 6.27701 8.78202 6.65098C8.70227 7.02494 8.51698 7.36821 8.24812 7.6401L6.97812 8.9101C8.40167 11.4136 10.4746 13.4865 12.9781 14.9101L14.2481 13.6401C14.52 13.3712 14.8633 13.1859 15.2372 13.1062C15.6112 13.0264 16.0002 13.0556 16.3581 13.1901C17.2654 13.5286 18.2081 13.7635 19.1681 13.8901C19.6539 13.9586 20.0975 14.2033 20.4146 14.5776C20.7318 14.9519 20.9003 15.4297 20.8881 15.9201Z" stroke="#185E9C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>                         
+        </div>
+        <div>
+          <h3>Numery telefonu</h3>
+          <p>603 768 134  |  603  224 633  |  22 782 61 97</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer>
+    <div></div>
+    <div class="footer__divider"></div>
+    <div class="footer__text">
+      <span>&copy; ZUK Stasi Las</span>
+      <div class="footer__divider"></div>
+      <span class="footer__dreampire">Zaprojektowano przez: <img class="dreampire-logo" src="./img/dreampire_logo.png"/> </span>
+    </div>
+  </footer>
+  <script src="./js/navbar.js"></script>
+</body>
+</html>
